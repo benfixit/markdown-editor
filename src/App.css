@@ -4,24 +4,9 @@ main {
   min-height: 100vh;
   background-color: black;
 
-  .settings {
-    flex: 1;
-    max-height: 50px;
-  }
-
   .ui {
     display: flex;
     flex: 4;
     border: thin solid;
-
-    .editor {
-      flex: 1;
-      border: thin solid white;
-    }
-
-    .preview {
-      flex: 1;
-      border: thin solid white;
-    }
   }
 }

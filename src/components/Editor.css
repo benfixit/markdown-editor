@@ -1,9 +1,39 @@
-textarea {
-    width: calc(100% - 16px);
-    height: calc(100% - 16px);
-    background-color: black;
-    color: white;
-    outline: none;
-    font-size: 14; /** allow font-specification **/
-    padding: 8px;
+.editor {
+    padding: 24px;
+    flex: 1;
+    border-right: thin solid white;
+    display: flex;
+    flex-direction: column;
+
+    .editor_title {
+        border-bottom: thin solid white;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0;
+
+        h3 {
+            color: white;
+        }
+
+        ul {
+            display: flex;
+            color: white;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+
+    textarea {
+        width: calc(100% - 24px);
+        height: calc(100% - 24px);
+        background-color: black;
+        color: white;
+        outline: none;
+        font-size: 14; /** allow font-specification **/
+        padding: 8px;
+        border: none;
+        resize: none;
+    }
 }

@@ -10,15 +10,20 @@ const Editor = () => {
         setContent(event.target.value);
     }
 
-    /**
-     * 
-Download|Reload|Clear|Fork
-     */
+    /**Download|Reload|Clear|Fork*/
 
     return (
-        <>
+        <section className="editor">
+            <div className="editor_title">
+                <h3>Editor</h3>
+                <ul>
+                    <li>100 Words</li>
+                    <li>500 Characters</li>
+                </ul>
+            </div>
             <textarea onChange={handleChange} />
-        </>
+            
+        </section>
     );
 }
 
