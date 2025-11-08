@@ -2,7 +2,7 @@
     padding: 24px;
     background-color: black;
     color: white;
-    font-size: 14; /** allow font-specification **/
+    font-size: 14px; /** allow font-specification **/
     flex: 1;
     border-left: thin solid white;
 
@@ -10,7 +10,7 @@
         border-bottom: thin solid white;
         display: flex;
         justify-content: space-between;
-        padding: 16px 0;
+        height: 40px;
 
         h3 {
             color: white;

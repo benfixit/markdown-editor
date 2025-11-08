@@ -9,7 +9,7 @@
         border-bottom: thin solid white;
         display: flex;
         justify-content: space-between;
-        padding: 16px 0;
+        height: 40px;
 
         h3 {
             color: white;
