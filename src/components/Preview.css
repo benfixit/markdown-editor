@@ -1,0 +1,6 @@
+div {
+    background-color: black;
+    color: white;
+    font-size: 14; /** allow font-specification **/
+    padding: 4px 24px;
+}

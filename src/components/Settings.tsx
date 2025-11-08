@@ -3,10 +3,15 @@ import { useState } from "react";
 const Settings = () => {
     return (
         <section>
-        <div>
-            <span>Change theme</span>
-        </div>
-        <textarea />
+            <div>
+                <h3></h3>
+                <span>Character count</span>
+                <span>Word count</span>
+            </div>
+            <div>
+                <span>Change theme</span>
+                <span>Download file</span>
+            </div>
     </section>
     );
 }

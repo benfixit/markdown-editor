@@ -1,15 +1,24 @@
-import { useState } from "react";
+import { useMarkdown } from "../store/MarkdownProvider";
+import "./Editor.css";
 
 const Editor = () => {
+    const { setContent } = useMarkdown();
+    // @ts-ignore
+    const handleChange = (event) => {
+
+        // debounce this
+        setContent(event.target.value);
+    }
+
+    /**
+     * 
+Download|Reload|Clear|Fork
+     */
+
     return (
-        <section>
-        <div>
-            <h3></h3>
-            <span>Character count</span>
-            <span>Word count</span>
-        </div>
-        <textarea />
-    </section>
+        <>
+            <textarea onChange={handleChange} />
+        </>
     );
 }
 

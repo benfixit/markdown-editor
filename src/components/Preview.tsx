@@ -1,8 +1,13 @@
-import { useState } from "react";
+import Markdown from "react-markdown";
+import { useMarkdown } from "../store/MarkdownProvider";
+import "./Preview.css";
 
 const Preview = () => {
+    const { content } = useMarkdown();
     return (
-        <div>This is the preview</div>
+        <div>
+            <Markdown>{content}</Markdown>
+        </div>
     );
 }
 
