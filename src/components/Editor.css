@@ -9,6 +9,7 @@
         border-bottom: thin solid white;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         height: 40px;
 
         h3 {
@@ -18,9 +19,14 @@
         ul {
             display: flex;
             color: white;
+            align-items: center;
 
             li {
                 list-style: none;
+            }
+
+            li:first-child {
+                margin-right: 8px;
             }
         }
     }
